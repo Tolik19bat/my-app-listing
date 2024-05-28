@@ -49,8 +49,8 @@ const Item = ({ item }: ItemProps) => {
     <div className="item">
       <div className="item-image">
         // Ссылка на URL item, внутри изображение из свойства MainImage
-        <a href={item.url}>
-          <img src={item.MainImage.url_570xN} />
+        <a href={item.url} title="Описание ссылки">
+          <img src={item.MainImage.url_570xN} alt="Описание изображения" />
         </a>
       </div>
       <div className="item-details">
