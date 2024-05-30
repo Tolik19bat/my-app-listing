@@ -10,7 +10,7 @@ interface ItemProps {
 const Item = ({ item }: ItemProps) => {
 
   // Если состояние item не "active", то компонент ничего не рендерит
-  if (item.state != "active") return;
+  if (item.state !== "active") return;
 
   // Определяем переменную title, которая будет содержать заголовок item
   // Если длина заголовка меньше или равна 50 символам, используем его полностью,
